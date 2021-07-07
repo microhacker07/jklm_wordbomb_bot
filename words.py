@@ -14,7 +14,7 @@ def find_compatible_word(letters):
   global word_list_file
   compatible_words = []
   for word in word_list_file:
-    if letters in word: #and len(word) < MAX_SIZE:
+    if letters in word:
       compatible_words.append(word)
   return compatible_words
   
@@ -34,7 +34,6 @@ word_list_file = load_words("words.txt")
 
 if __name__ == "__main__":
   from functools import reduce
-  word_list_file = load_words("words.txt")
 
   while(True):
     letters = input("\nAvailable letters (ie. adhs): ")
@@ -45,6 +44,5 @@ if __name__ == "__main__":
     if len(words) > 0:
       words.reverse()
       print(reduce(lambda a, b: f"{b} {a}", words))
-      #print(reduce(lambda a, b: f"{spaceout(b)}{a}", words))
 
 
