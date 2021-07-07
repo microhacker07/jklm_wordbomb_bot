@@ -1,6 +1,3 @@
-# Throws words from 'words.txt'
-# TXT File From the github project https://github.com/dwyl/english-words
-
 from os import path
 
 def load_words(filename):
@@ -30,15 +27,14 @@ def rate_words(words, bonus_letters):
   words.sort(key=sort_func)
 
 # Main
-
-#word_list_file = load_words("words.txt")
-
 if __name__ == "__main__":
   from functools import reduce
 
+  word_list_file = load_words("words.txt")
+
   while(True):
     letters = input("\nAvailable letters (ie. adhs): ")
-    words = find_compatible_word(letters)
+    words = find_compatible_word(letters, word_list_file)
     rate_words(words, ["a", "c"])
 
     print(f"Found {len(words)} words:")
