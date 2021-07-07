@@ -1,37 +1,34 @@
-import argparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 import words
 import random
+from args import Args
 
 def delayed_type(element, text):
   try:
     element.clear()
-    for t in text:
-      element.send_keys(t)
-      sleep(random.random()*0.1)
+    if Args.god:
+      element.send_keys(text)
+    else:
+      for t in text:
+        element.send_keys(t)
+        sleep(random(0, 0.2))
     element.send_keys(Keys.RETURN)
   except:
     print(f"{username} was unable to enter {text}")
+    
+def random(min, max):
+  return min + random.random() * (max - min)
 
 
-username = "guest69420"
-room_code = "NULL"
+username = "guest6942"
+ 
+room_code = Args.room
 
-parser = argparse.ArgumentParser(description='Bot for wordbomb from jklm.fun')
- 
-# Adding optional argument
-parser.add_argument('room_code', help='room code for jklm.fun')
-parser.add_argument('-n', '--name', help="bot's username")
- 
-# Read arguments from command line
-args = parser.parse_args()
- 
-room_code = args.room_code
-if args.name != None:
-  username = args.name
+if Args.name != None:
+  username = Args.name
 
 
 driver = webdriver.Chrome()
@@ -70,12 +67,13 @@ while True:
 
   
   if turn_elem.is_displayed() and input_elem.is_displayed():
+    sleep(random(0.5, 2.5))
     syllable = driver.find_element_by_class_name("syllable").text
     com_words = words.find_compatible_word(syllable, tmp_word_list)
 
     selected_word = ""
     if len(com_words) > 0:
-      selected_word = com_words[int(random.random()*len(com_words))]
+      selected_word = com_words[int(random(0, len(com_words)))]
 
     tmp_word_list.remove(selected_word)
 
