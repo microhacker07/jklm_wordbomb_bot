@@ -11,7 +11,7 @@ def delayed_type(element, text):
     element.clear()
     for t in text:
       element.send_keys(t)
-      sleep(0.1)
+      sleep(random.random()*0.1)
     element.send_keys(Keys.RETURN)
   except:
     print(f"{username} was unable to enter {text}")
@@ -70,7 +70,6 @@ while True:
 
   
   if turn_elem.is_displayed() and input_elem.is_displayed():
-    sleep(2)
     syllable = driver.find_element_by_class_name("syllable").text
     com_words = words.find_compatible_word(syllable, tmp_word_list)
 
