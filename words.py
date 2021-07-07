@@ -7,14 +7,15 @@ def load_words(filename):
   valid_words = []
   with open(filename) as word_file:
     for l in word_file:
-      valid_words.append(l[:-1])
+      line = l[:-1]
+      if len(line) <= 30:
+        valid_words.append(line)
   return valid_words
 
-def find_compatible_word(letters):
-  global word_list_file
+def find_compatible_word(letters, word_list):
   compatible_words = []
-  for word in word_list_file:
-    if letters in word:
+  for word in word_list:
+    if letters.lower() in word.lower():
       compatible_words.append(word)
   return compatible_words
   
@@ -30,7 +31,7 @@ def rate_words(words, bonus_letters):
 
 # Main
 
-word_list_file = load_words("words.txt")
+#word_list_file = load_words("words.txt")
 
 if __name__ == "__main__":
   from functools import reduce
