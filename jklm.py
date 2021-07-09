@@ -1,34 +1,55 @@
+import argparse
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
-import words
 import random
-from args import Args
+import words
 
 def delayed_type(element, text):
   try:
     element.clear()
-    if Args.god:
+    if args.god:
       element.send_keys(text)
     else:
       for t in text:
         element.send_keys(t)
-        sleep(random(0, 0.2))
+        sleep(random_interval(0, 0.2))
     element.send_keys(Keys.RETURN)
+    return True
   except:
     print(f"{username} was unable to enter {text}")
+    return False
     
-def random(min, max):
-  return min + random.random() * (max - min)
+def random_interval(min_val, max_val):
+  return min_val + random.random() * (max_val - min_val)
+  
+def random_int(min_val, max_val):
+  return int(random_interval(min_val, max_val))
 
+# Arguments
 
-username = "guest6942"
+import argparse
+
+parser = argparse.ArgumentParser(description='Bot for wordbomb from jklm.fun')
  
-room_code = Args.room
+# Adding optional argument
+parser.add_argument('room', help='room code for jklm.fun')
+parser.add_argument('-n', '--name', help="bot's username")
+parser.add_argument('-g', '--god', action='store_true', help='enable "godspeed" mode')
+ 
+# Read arguments from command line
+args = parser.parse_args()
 
-if Args.name != None:
-  username = Args.name
+
+# Setup
+
+room_code = args.room
+
+username = "guest69420"
+
+if args.name != None:
+  username = args.name
 
 
 driver = webdriver.Chrome()
@@ -67,17 +88,16 @@ while True:
 
   
   if turn_elem.is_displayed() and input_elem.is_displayed():
-    sleep(random(0.5, 2.5))
+    sleep(random_interval(1, 2.5))
     syllable = driver.find_element_by_class_name("syllable").text
     com_words = words.find_compatible_word(syllable, tmp_word_list)
 
     selected_word = ""
     if len(com_words) > 0:
-      selected_word = com_words[int(random(0, len(com_words)))]
+      selected_word = com_words[int(random_interval(0, len(com_words)))]
 
-    tmp_word_list.remove(selected_word)
-
-    delayed_type(input_elem, selected_word)
+    if delayed_type(input_elem, selected_word):
+      tmp_word_list.remove(selected_word)
 
 driver.close()
 
