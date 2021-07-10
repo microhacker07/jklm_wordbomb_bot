@@ -63,9 +63,13 @@ while True:
     if '.d' in latest_msg and len(latest_msg.split()) > 1:
       syllable = latest_msg.split()[1]
       com_words = words.find_compatible_word(syllable, word_list)
+      
+      print_length = 5
+      if len(com_words) < 5:
+        print_length = len(com_words)
 
       five_random_words = []
-      for i in range(5):
+      for i in range(print_length):
         ran_word = com_words[int(random_interval(0, len(com_words)))]
         five_random_words.append(ran_word)
         com_words.remove(ran_word)
