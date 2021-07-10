@@ -95,8 +95,10 @@ while True:
     if len(com_words) > 0:
       selected_word = com_words[int(random_interval(0, len(com_words)))]
 
-    if delayed_type(input_elem, selected_word):
+    if delayed_type(input_elem, selected_word) and selected_word != "":
       tmp_word_list.remove(selected_word)
+    elif selected_word == "":
+      print(f"{username} could not find a word for {syllable}")
 
 driver.close()
 
