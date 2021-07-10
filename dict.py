@@ -1,6 +1,6 @@
 import argparse
 from functools import reduce
-from selenium import webdriver
+from webdriver import driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
@@ -44,7 +44,6 @@ if Args.name != None:
   username = Args.name
 
 
-driver = webdriver.Chrome()
 driver.implicitly_wait(10)
 driver.get('https://jklm.fun/' + room_code)
 assert "JKLM" in driver.title

@@ -1,5 +1,5 @@
 import argparse
-from selenium import webdriver
+from webdriver import driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
@@ -52,7 +52,6 @@ if args.name != None:
   username = args.name
 
 
-driver = webdriver.Chrome()
 driver.implicitly_wait(10)
 driver.get('https://jklm.fun/' + room_code)
 assert "JKLM" in driver.title
@@ -88,7 +87,7 @@ while True:
 
   
   if turn_elem.is_displayed() and input_elem.is_displayed():
-    sleep(random_interval(1, 2.5))
+    sleep(random_interval(1, 2))
     syllable = driver.find_element_by_class_name("syllable").text
     com_words = words.find_compatible_word(syllable, tmp_word_list)
 
