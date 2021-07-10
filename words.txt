@@ -17370,6 +17370,7 @@ bamboozler
 bamboozlers
 bamboozles
 bamboozling
+bamischijf
 bammed
 bammer
 bammers
@@ -28635,6 +28636,7 @@ brugmansia
 brugmansias
 bruhaha
 bruhahas
+bruhs
 bruilzie
 bruilzies
 bruin
@@ -35203,6 +35205,7 @@ cayuses
 caz
 cazique
 caziques
+cds
 ceanothus
 ceanothuses
 ceas
@@ -70926,6 +70929,7 @@ duppies
 dupping
 duppy
 dups
+duqqa
 dura
 durabilities
 durability
@@ -107087,6 +107091,7 @@ highjacker
 highjackers
 highjacking
 highjacks
+highjinks
 highland
 highlander
 highlanders
@@ -123073,6 +123078,7 @@ jeff
 jeffed
 jeffing
 jeffs
+jeggings
 jehad
 jehadi
 jehadis
@@ -123129,6 +123135,7 @@ jellying
 jellylike
 jellyroll
 jellyrolls
+jelqs
 jelutong
 jelutongs
 jemadar
@@ -127673,6 +127680,7 @@ kythes
 kything
 kyu
 kyus
+kyykka
 la
 laager
 laagered
@@ -190283,6 +190291,7 @@ qoph
 qophs
 qorma
 qormas
+qrs
 qua
 quaalude
 quaaludes
@@ -240833,6 +240842,7 @@ tepidness
 tepidnesses
 tepoy
 tepoys
+teqball
 tequila
 tequilas
 tequilla
