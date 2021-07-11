@@ -7,7 +7,7 @@ from time import sleep
 import random
 import words
 
-def delayed_type(element, text):
+def type(element, text):
   try:
     element.clear()
     element.send_keys(text)
@@ -50,7 +50,7 @@ assert "JKLM" in driver.title
 
 # Nickname field
 nick_elem = driver.find_element_by_class_name("nickname")
-delayed_type(nick_elem, username)
+type(nick_elem, username)
 
 input_elem = driver.find_element_by_xpath("//textarea")
 word_list = words.load_words("words.txt")
@@ -76,8 +76,10 @@ while True:
 
       if len(five_random_words) > 0:
         text = reduce(lambda a, b: f"{a}, {b}", five_random_words)
+      else:
+        text = f"I currently don't have a word that matches to '{syllable}'" 
 
-      delayed_type(input_elem, text)
+      type(input_elem, text)
 
 driver.close()
 
