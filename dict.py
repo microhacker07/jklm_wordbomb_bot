@@ -74,7 +74,8 @@ while True:
         five_random_words.append(ran_word)
         com_words.remove(ran_word)
 
-      text = reduce(lambda a, b: f"{a}, {b}", five_random_words)
+      if len(five_random_words) > 0:
+        text = reduce(lambda a, b: f"{a}, {b}", five_random_words)
 
       delayed_type(input_elem, text)
 
