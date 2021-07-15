@@ -14,7 +14,7 @@ def delayed_type(element, text):
     else:
       for t in text:
         element.send_keys(t)
-        sleep(random_interval(0, 0.2))
+        sleep(random_interval(0, 0.1))
     element.send_keys(Keys.RETURN)
     return True
   except:
@@ -27,15 +27,21 @@ def random_interval(min_val, max_val):
 def random_int(min_val, max_val):
   return int(random_interval(min_val, max_val))
 
-# Arguments
+def random_word(words):
+  selected_word = ""
+  if len(words) > 0:
+    selected_word = words[int(random_interval(0, len(words)))]
+  return selected_word
 
-import argparse
+
+# Arguments
 
 parser = argparse.ArgumentParser(description='Bot for wordbomb from jklm.fun')
  
 # Adding optional argument
 parser.add_argument('room', help='room code for jklm.fun')
 parser.add_argument('-n', '--name', help="bot's username")
+parser.add_argument('-m', '--mode', help="different word selection modes (0 is default): 0=random, 1=short, 2=long")
 parser.add_argument('-g', '--god', action='store_true', help='enable "godspeed" mode')
  
 # Read arguments from command line
@@ -50,6 +56,12 @@ username = "guest69420"
 
 if args.name != None:
   username = args.name
+
+mode = 0
+
+if args.mode != None and (0 <= int(args.mode) <= 2):
+  mode = int(args.mode)
+
 
 
 driver.implicitly_wait(10)
@@ -92,8 +104,14 @@ while True:
     com_words = words.find_compatible_word(syllable, tmp_word_list)
 
     selected_word = ""
-    if len(com_words) > 0:
-      selected_word = com_words[int(random_interval(0, len(com_words)))]
+    if mode == 0:
+      selected_word = random_word(com_words)
+    elif mode == 1:
+      words.rate_words(com_words)
+      selected_word = com_words[0]
+    elif mode == 2:
+      words.rate_words(com_words)
+      selected_word = com_words[-1]
 
     if delayed_type(input_elem, selected_word) and selected_word != "":
       tmp_word_list.remove(selected_word)

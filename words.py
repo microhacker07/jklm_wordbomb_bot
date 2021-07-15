@@ -22,7 +22,7 @@ def word_rate_function(bonus_letters):
     return len(word) - 2 * bonus
   return F
   
-def rate_words(words, bonus_letters):
+def rate_words(words, bonus_letters = []):
   sort_func = word_rate_function(bonus_letters)
   words.sort(key=sort_func)
 
