@@ -1,10 +1,12 @@
 import argparse
-from webdriver import driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
+from localStorage import LocalStorage
+from localStorage import get_image_as_base64
 import random
 import words
+import json
 
 def delayed_type(element, text):
   try:
@@ -42,6 +44,7 @@ parser = argparse.ArgumentParser(description='Bot for wordbomb from jklm.fun')
 parser.add_argument('room', help='room code for jklm.fun')
 parser.add_argument('-n', '--name', help="bot's username")
 parser.add_argument('-m', '--mode', help="different word selection modes (0 is default): 0=random, 1=short, 2=long")
+parser.add_argument('-i', '--img', help="url an image")
 parser.add_argument('-g', '--god', action='store_true', help='enable "godspeed" mode')
  
 # Read arguments from command line
@@ -62,8 +65,7 @@ mode = 0
 if args.mode != None and (0 <= int(args.mode) <= 2):
   mode = int(args.mode)
 
-
-
+from webdriver import driver
 driver.implicitly_wait(10)
 driver.get('https://jklm.fun/' + room_code)
 assert "JKLM" in driver.title
@@ -72,6 +74,17 @@ assert "JKLM" in driver.title
 nick_elem = driver.find_element_by_class_name("nickname")
 delayed_type(nick_elem, username)
 print(f"{username} has logged on")
+
+if args.img != None:
+  sleep(2)
+  storage = LocalStorage(driver)
+
+  image = get_image_as_base64(args.img)
+  jklmDict = json.loads(storage["jklmSettings"])
+  jklmDict["picture"] = image
+  storage["jklmSettings"] = json.dumps(jklmDict)
+  driver.refresh()
+
 
 # Change to game iframe
 iframe = driver.find_element_by_tag_name("iframe")
