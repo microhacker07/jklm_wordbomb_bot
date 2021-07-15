@@ -1,3 +1,4 @@
 http://norvig.com/ngrams/sowpods.txt
 http://norvig.com/ngrams/enable1.txt
 https://raw.githubusercontent.com/bgreenlee/scrabble-suggest/master/data/word_list_moby_crossword-flat/word_list_moby_crossword.flat.txt
+https://raw.githubusercontent.com/DO-Ui/bombparty-bot/master/wordlist.txt
