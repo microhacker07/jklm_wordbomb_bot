@@ -16,7 +16,7 @@ def delayed_type(element, text):
     else:
       for t in text:
         element.send_keys(t)
-        sleep(random_interval(0, 0.1))
+        sleep(random_interval(0, 0.15))
     element.send_keys(Keys.RETURN)
     return True
   except:
@@ -76,7 +76,7 @@ delayed_type(nick_elem, username)
 print(f"{username} has logged on")
 
 if args.img != None:
-  sleep(2)
+  sleep(1)
   storage = LocalStorage(driver)
 
   image = get_image_as_base64(args.img)
@@ -100,7 +100,7 @@ word_list_file = words.load_words("words.txt")
 tmp_word_list = list(word_list_file)
 
 while True:
-  sleep(0.2)
+  sleep(0.5)
 
   if join_elem.is_displayed() and join_elem.text != '':
     # Join button
@@ -112,19 +112,21 @@ while True:
 
   
   if turn_elem.is_displayed() and input_elem.is_displayed():
-    sleep(random_interval(1, 2))
+    if not args.god:
+      sleep(random_interval(0.5, 2))
     syllable = driver.find_element_by_class_name("syllable").text
     com_words = words.find_compatible_word(syllable, tmp_word_list)
 
     selected_word = ""
-    if mode == 0:
-      selected_word = random_word(com_words)
-    elif mode == 1:
-      words.rate_words(com_words)
-      selected_word = com_words[0]
-    elif mode == 2:
-      words.rate_words(com_words)
-      selected_word = com_words[-1]
+    if len(com_words) > 0:
+      if mode == 0:
+        selected_word = random_word(com_words)
+      elif mode == 1:
+        words.rate_words(com_words)
+        selected_word = com_words[0]
+      elif mode == 2:
+        words.rate_words(com_words)
+        selected_word = com_words[-1]
 
     if delayed_type(input_elem, selected_word) and selected_word != "":
       tmp_word_list.remove(selected_word)
