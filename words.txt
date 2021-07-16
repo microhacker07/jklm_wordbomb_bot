@@ -12117,6 +12117,7 @@ argent
 argental
 argentic
 argentiferous
+argentina
 argentine
 argentines
 argentite
@@ -16700,7 +16701,9 @@ backstreets
 backstretch
 backstretches
 backstroke
+backstroked
 backstrokes
+backstroking
 backswept
 backswing
 backswings
@@ -17682,6 +17685,7 @@ banging
 bangings
 bangkok
 bangkoks
+bangladesh
 bangle
 bangled
 bangles
@@ -24464,6 +24468,7 @@ blockworks
 blocky
 blocs
 blog
+blogged
 blogger
 bloggers
 blogging
@@ -25508,8 +25513,10 @@ bolivar
 bolivares
 bolivars
 bolivia
+bolivian
 boliviano
 bolivianos
+bolivians
 bolivias
 bolix
 bolixed
@@ -26041,6 +26048,7 @@ bookworm
 bookworms
 booky
 bool
+boolean
 booled
 booling
 bools
@@ -38418,6 +38426,7 @@ chinaroot
 chinaroots
 chinars
 chinas
+chinatown
 chinaware
 chinawares
 chinbone
@@ -41123,6 +41132,7 @@ classification
 classifications
 classificatory
 classified
+classifieds
 classifier
 classifiers
 classifies
@@ -44149,6 +44159,7 @@ colognes
 cologs
 colombard
 colombards
+colombia
 colon
 colone
 colonel
@@ -53239,6 +53250,10 @@ crowdedness
 crowdednesses
 crowder
 crowders
+crowdfund
+crowdfunded
+crowdfunding
+crowdfunds
 crowdie
 crowdies
 crowding
@@ -53652,6 +53667,8 @@ cryptococcoses
 cryptococcosis
 cryptococcus
 cryptocrystalline
+cryptocurrencies
+cryptocurrency
 cryptogam
 cryptogamian
 cryptogamic
@@ -55026,6 +55043,8 @@ cyber
 cyberathlete
 cyberathletes
 cyberathletics
+cyberbullies
+cyberbully
 cybercafe
 cybercafes
 cybercast
@@ -57420,6 +57439,7 @@ decelerometers
 deceleron
 decelerons
 december
+decembers
 decemvir
 decemviral
 decemvirate
@@ -73329,6 +73349,7 @@ egurgitating
 egypt
 egyptian
 egyptians
+egyptology
 eh
 ehed
 ehing
@@ -80083,6 +80104,8 @@ ethionine
 ethionines
 ethions
 ethiopia
+ethiopian
+ethiopians
 ethiops
 ethiopses
 ethmoid
@@ -94125,6 +94148,7 @@ galloping
 gallops
 gallous
 gallow
+galloway
 gallowed
 gallowglass
 gallowglasses
@@ -102794,6 +102818,8 @@ hacksawed
 hacksawing
 hacksawn
 hacksaws
+hacktivist
+hacktivists
 hackwork
 hackworks
 hacqueton
@@ -106484,6 +106510,7 @@ hence
 henceforth
 henceforward
 henceforwards
+hench
 henchman
 henchmen
 henchperson
@@ -119259,6 +119286,7 @@ inspissators
 instabilities
 instability
 instable
+instagram
 instal
 install
 installable
@@ -123574,6 +123602,7 @@ january
 janus
 jap
 japan
+japanese
 japanise
 japanised
 japanises
@@ -129772,6 +129801,8 @@ laodiceans
 laogai
 laogais
 laos
+laotian
+laotians
 lap
 laparoscope
 laparoscopes
@@ -131444,6 +131475,7 @@ lemmatize
 lemmatized
 lemmatizes
 lemmatizing
+lemme
 lemming
 lemminglike
 lemmings
@@ -134207,6 +134239,8 @@ locative
 locatives
 locator
 locators
+locavore
+locavores
 locellate
 loch
 lochan
@@ -136436,6 +136470,9 @@ macebearers
 maced
 macedoine
 macedoines
+macedonia
+macedonian
+macedonians
 macer
 maceral
 macerals
@@ -139276,6 +139313,7 @@ marvy
 marx
 marxisant
 marxism
+marxisms
 marxist
 marxists
 mary
@@ -143070,6 +143108,8 @@ micro
 microaerophile
 microaerophiles
 microaerophilic
+microaggression
+microaggressions
 microampere
 microamperes
 microanalyses
@@ -143420,6 +143460,7 @@ micromorphology
 micron
 microneedle
 microneedles
+micronesia
 micronisation
 micronisations
 micronise
@@ -144810,6 +144851,7 @@ minors
 minorship
 minorships
 minos
+minotaur
 minoxidil
 minoxidils
 minshuku
@@ -147734,7 +147776,9 @@ mongo
 mongoe
 mongoes
 mongol
+mongolia
 mongolian
+mongolians
 mongolism
 mongolisms
 mongoloid
@@ -153861,6 +153905,8 @@ netball
 netballer
 netballers
 netballs
+netbook
+netbooks
 nete
 netes
 netful
@@ -153869,6 +153915,9 @@ nethead
 netheads
 netheless
 nether
+netherlander
+netherlanders
+netherlands
 netherlings
 nethermore
 nethermost
@@ -154386,6 +154435,7 @@ newswritings
 newsy
 newt
 newton
+newtonian
 newtons
 newts
 newwaver
@@ -159442,6 +159492,7 @@ octingenaries
 octingenary
 octingentenary
 october
+octobers
 octocentenaries
 octocentenary
 octodecillion
@@ -166485,6 +166536,10 @@ overshadow
 overshadowed
 overshadowing
 overshadows
+overshare
+overshared
+overshares
+oversharing
 oversharp
 overshine
 overshines
@@ -180411,6 +180466,7 @@ podsolized
 podsolizes
 podsolizing
 podsols
+podunk
 podzol
 podzolic
 podzolisation
@@ -192866,6 +192922,7 @@ quotitions
 quotum
 quotums
 quovadis
+quran
 qursh
 qurshes
 qurush
@@ -205892,6 +205949,9 @@ romances
 romancical
 romancing
 romancings
+romania
+romanian
+romanians
 romanicite
 romanicites
 romanisation
@@ -206215,6 +206275,8 @@ roping
 ropings
 ropy
 roque
+roquefort
+roqueforts
 roquelaure
 roquelaures
 roques
@@ -214972,6 +215034,7 @@ septation
 septations
 septavalent
 september
+septembers
 septemfid
 septemvir
 septemvirate
@@ -215937,6 +216000,7 @@ sexually
 sexvalent
 sexy
 sey
+seychelles
 seyen
 seyens
 seys
@@ -222904,6 +222968,7 @@ snowmelt
 snowmelts
 snowmen
 snowmobile
+snowmobiled
 snowmobiler
 snowmobilers
 snowmobiles
@@ -225921,8 +225986,10 @@ spellbindingly
 spellbinds
 spellbound
 spellcheck
+spellchecked
 spellchecker
 spellcheckers
+spellchecking
 spellchecks
 spelldown
 spelldowns
@@ -245611,6 +245678,8 @@ timeservers
 timeserving
 timeservings
 timeshare
+timestamp
+timestamps
 timetable
 timetabled
 timetables
@@ -246712,6 +246781,8 @@ tonettes
 toney
 tong
 tonga
+tongan
+tongans
 tongas
 tonged
 tonger
@@ -251367,18 +251438,22 @@ trustlessnesses
 trustor
 trustors
 trusts
+trustworthiest
 trustworthily
 trustworthiness
 trustworthinesses
 trustworthy
 trusty
 truth
+truther
+truthers
 truthful
 truthfully
 truthfulness
 truthfulnesses
 truthier
 truthiest
+truthiness
 truthless
 truthlessness
 truthlessnesses
@@ -252128,6 +252203,8 @@ turdion
 turdions
 turdoid
 turds
+turducken
+turduckens
 tureen
 tureens
 turf
@@ -252308,6 +252385,7 @@ turtles
 turtling
 turtlings
 turves
+tuscan
 tuscany
 tusche
 tusches
@@ -253156,6 +253234,7 @@ ubiquitousness
 ubiquitousnesses
 ubiquity
 uboats
+ubuntu
 uckers
 udal
 udaller
@@ -263100,6 +263179,7 @@ vantbrace
 vantbraces
 vants
 vanward
+vape
 vapid
 vapider
 vapidest
@@ -268246,6 +268326,11 @@ waterbed
 waterbeds
 waterbird
 waterbirds
+waterboard
+waterboarded
+waterboarding
+waterboardings
+waterboards
 waterborne
 waterbrain
 waterbrains
@@ -268295,6 +268380,7 @@ waterfowlings
 waterfowls
 waterfront
 waterfronts
+watergate
 waterglass
 waterglasses
 waterhead
@@ -271027,6 +271113,8 @@ winglets
 winglike
 wingman
 wingmen
+wingnut
+wingnuts
 wingover
 wingovers
 wings
